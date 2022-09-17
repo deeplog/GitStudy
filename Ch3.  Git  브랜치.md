@@ -29,5 +29,16 @@ git fetch를 실행한후 git merge를 생하는 것과 같은 의미
 ##### 리무트 브랜치 삭제하기
  ```git push origin --delete serverfix```
 
+##### Rebase
+한 브랜치의 base를 다른 브랜치의 최신 커밋으로 옮기는 것
+복잡한 형태의 브랜치를 단순하게 유지시킬 수 있는 장점이 있다. 
+로컬에서 히스토리 정리하는데 사용하는 용도가 됨
+**주의사항: Push로 내보낸 commit은 절대 rebase 하지 말것**
+
+step1: ```git checkout feature```
+step2: ```git rebase master```
+
+!<img src="./images/merge_rebase.png" width="80%"/>
+
 
 
